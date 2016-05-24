@@ -31,7 +31,7 @@ public class MSSQLDataSourceMain {
 
     public static void main(String[] args) throws JEVisException {
         JEVisDataSource _client = new JEVisDataSourceSQL(
-                "openjevis.org", "13306", "jevis", "jevis", "jevistest");
+                  "openjevis.org", "13306", "jevis", "jevis", "jevistest");
         _client.connect("Sys Admin", "JEV34Env");
         JEVisObject mssqlServer = _client.getObject(4497l);
         MSSQLDataSource dz = new MSSQLDataSource();
